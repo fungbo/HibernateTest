@@ -61,4 +61,9 @@ public class EventEntity {
         result = 31 * result + (eventDate != null ? eventDate.hashCode() : 0);
         return result;
     }
+
+    @Override
+    public String toString() {
+        return "id = " + id + " title = " + title + " date = " + eventDate;
+    }
 }
