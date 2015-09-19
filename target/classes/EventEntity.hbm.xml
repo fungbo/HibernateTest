@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.tw.EventEntity" table="EVENT" schema="" catalog="db2">
+        <id name="id">
+            <column name="id" sql-type="int" not-null="true"/>
+            <generator class="increment"/>
+        </id>
+        <property name="title">
+            <column name="title" sql-type="char" length="30"/>
+        </property>
+        <property name="eventDate">
+            <column name="event_date" sql-type="date"/>
+        </property>
+    </class>
+</hibernate-mapping>
